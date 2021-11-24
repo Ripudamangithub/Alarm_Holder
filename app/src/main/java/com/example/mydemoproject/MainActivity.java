@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 startAlert();
             }
         });
-        com.example.mylibrary.AlarmActivity myBroadcastReceiver= new com.example.mylibrary.AlarmActivity();
-        myBroadcastReceiver.startAlert();
+
     }
 
     public void startAlert(){
