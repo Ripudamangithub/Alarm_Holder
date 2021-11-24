@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mylibrary.AlarmActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,9 +23,12 @@ public class MainActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startAlert();
+                AlarmActivity fffff=new AlarmActivity();
+                //        fffff.setMsgToast("xvhskjvhsvk");
+                fffff.startAlert();
             }
         });
+
 
     }
 

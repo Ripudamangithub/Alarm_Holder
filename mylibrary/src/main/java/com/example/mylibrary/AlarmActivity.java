@@ -3,6 +3,7 @@ package com.example.mylibrary;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,12 +20,12 @@ public class AlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button start= findViewById(R.id.button);
-        start.setOnClickListener(new View.OnClickListener() {
+      /*  start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startAlert();
             }
-        });
+        });*/
 
     }
     public void startAlert(){
@@ -39,7 +40,7 @@ public class AlarmActivity extends AppCompatActivity {
         Toast.makeText(this, "Alarm set in " + i + " seconds",Toast.LENGTH_LONG).show();
     }
 
-    public void setMsgToast(String msg){
-        Toast.makeText(this, "Welcome: )"+msg, Toast.LENGTH_SHORT).show();
+    public void setMsgToast(Context context, String msg){
+        Toast.makeText(context, "Welcome: )"+msg, Toast.LENGTH_SHORT).show();
     }
 }
